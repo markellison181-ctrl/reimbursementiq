@@ -112,6 +112,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Lead Magnet Banner */}
+      <section className="py-8 bg-cyan-600/10 border-y border-cyan-500/20">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="text-sm text-cyan-400 font-semibold mb-1">📋 FREE CHEAT SHEET</p>
+            <p className="text-white font-bold text-lg">2026 Medicare Reimbursement Rate Changes</p>
+            <p className="text-gray-400 text-sm">20 categories, rate changes, effective dates, and impact analysis. Unlock instantly.</p>
+          </div>
+          <Link
+            href="/reports/medicare-rate-changes-2026"
+            className="shrink-0 px-6 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-lg transition text-sm"
+          >
+            Get Free Cheat Sheet →
+          </Link>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
