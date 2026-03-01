@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
-const FROM_EMAIL = process.env.WELCOME_FROM_EMAIL || "dayma.itamunoala@colliers.com";
+const FROM_EMAIL = process.env.WELCOME_FROM_EMAIL || "noreply@signalstackmedia.com";
 const FROM_NAME = "ReimbursementIQ";
 
 function buildWelcomeHtml(name?: string): string {
