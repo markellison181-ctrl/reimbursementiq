@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import SubscribeForm from '@/components/SubscribeForm';
 
@@ -164,6 +165,34 @@ export default function Home() {
               </div>
               <p className="text-gray-light">AMA approved 8 new CPT codes for remote therapeutic monitoring of musculoskeletal and respiratory conditions. Medicare has signaled coverage intent with proposed national rates.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Latest Intelligence */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold mb-3">Latest Intelligence</h2>
+            <p className="text-gray-400">Deep-dive analysis from our research team</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <Link href="/blog/cms-2026-opps-rule-impact" className="block p-4 rounded-lg border border-teal/20 hover:border-teal/40 transition-all group">
+              <span className="text-teal group-hover:underline font-medium">CMS 2026 OPPS Final Rule: Impact on Hospital Revenue</span>
+              <span className="block text-gray-400 text-sm mt-1">Read article →</span>
+            </Link>
+            <Link href="/blog/reduce-prior-auth-denials-2026" className="block p-4 rounded-lg border border-teal/20 hover:border-teal/40 transition-all group">
+              <span className="text-teal group-hover:underline font-medium">5 Strategies to Reduce Prior Authorization Denials in 2026</span>
+              <span className="block text-gray-400 text-sm mt-1">Read article →</span>
+            </Link>
+            <Link href="/blog/cpt-code-changes-july-2026" className="block p-4 rounded-lg border border-teal/20 hover:border-teal/40 transition-all group">
+              <span className="text-teal group-hover:underline font-medium">New CPT Codes for Remote Monitoring: July 2026 Guide</span>
+              <span className="block text-gray-400 text-sm mt-1">Read article →</span>
+            </Link>
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/blog" className="text-teal font-semibold hover:underline">View all articles →</Link>
           </div>
         </div>
       </section>

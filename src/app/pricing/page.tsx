@@ -1,4 +1,5 @@
 'use client';
+import Link from "next/link";
 
 const plans = [
   {
@@ -104,6 +105,27 @@ export default function PricingPage() {
           ))}
         </div>
       </div>
+
+      {/* Sample Analysis */}
+      <div className="max-w-4xl mx-auto mt-16 mb-8">
+        <h3 className="text-xl font-semibold text-center mb-6">See sample analysis from our team</h3>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href="/blog/cms-2026-opps-rule-impact" className="block p-4 rounded-lg border border-teal/20 hover:border-teal/40 transition-all text-center">
+            <span className="text-teal text-sm font-medium">CMS 2026 OPPS Final Rule: Impact on Hospital Revenue</span>
+            <span className="block text-gray-400 text-xs mt-1">Read analysis →</span>
+          </Link>
+          <Link href="/blog/reduce-prior-auth-denials-2026" className="block p-4 rounded-lg border border-teal/20 hover:border-teal/40 transition-all text-center">
+            <span className="text-teal text-sm font-medium">5 Strategies to Reduce Prior Authorization Denials in 2026</span>
+            <span className="block text-gray-400 text-xs mt-1">Read analysis →</span>
+          </Link>
+          <Link href="/blog/cpt-code-changes-july-2026" className="block p-4 rounded-lg border border-teal/20 hover:border-teal/40 transition-all text-center">
+            <span className="text-teal text-sm font-medium">New CPT Codes for Remote Monitoring: July 2026 Guide</span>
+            <span className="block text-gray-400 text-xs mt-1">Read analysis →</span>
+          </Link>
+        </div>
+      </div>
+
+      
     </section>
   );
 }

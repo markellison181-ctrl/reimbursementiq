@@ -236,6 +236,27 @@ export default async function BlogPost({ params }: PageProps) {
           [&_ol]:space-y-2 [&_ol]:mb-4 [&_ol]:list-decimal [&_ol]:pl-6
           [&_table]:w-full [&_th]:text-left [&_th]:text-white [&_th]:pb-2 [&_th]:border-b [&_th]:border-teal/20 [&_td]:text-gray-light [&_td]:py-2 [&_td]:border-b [&_td]:border-teal/10
           " dangerouslySetInnerHTML={{ __html: renderMarkdown(article.content) }} />
+      
+        {/* Pro CTA Banner */}
+        <div className="my-12 p-6 rounded-xl bg-teal/10 border border-teal/20 text-center">
+          <p className="text-lg font-semibold mb-2">Get deeper intel with ReimbursementIQ Pro</p>
+          <Link href="/pricing" className="inline-flex items-center gap-2 text-teal font-semibold hover:underline">
+            Unlock Pro features →
+          </Link>
+        </div>
+
+        {/* Related Articles */}
+        <div className="border-t border-teal/20 pt-8 mt-12">
+          <h3 className="text-2xl font-bold text-white mb-6">Related Articles</h3>
+          <div className="space-y-3">
+            {Object.entries(articles).filter(([s]) => s !== slug).map(([s, a]) => (
+              <Link key={s} href={`/blog/${s}`} className="block p-4 rounded-lg border border-teal/20 hover:border-teal/40 hover:bg-teal/5 transition-all">
+                <span className="text-teal text-sm font-medium">→</span>
+                <span className="ml-2 text-gray-200 hover:text-white">{a.title}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </article>
   );
