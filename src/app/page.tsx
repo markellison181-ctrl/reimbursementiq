@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import SubscribeForm from '@/components/SubscribeForm';
+
+export const metadata: Metadata = {
+  title: "ReimbursementIQ — Healthcare Reimbursement Intelligence",
+  description: "Weekly intelligence on CMS policy changes, CPT/ICD updates, Medicare/Medicaid rate changes, payer policy shifts, and denial trends for healthcare revenue cycle leaders.",
+};
 
 const features = [
   {

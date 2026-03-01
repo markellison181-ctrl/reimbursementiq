@@ -34,9 +34,49 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://reimbursementiq.com/#organization",
+      name: "SignalStack Media LLC",
+      url: "https://signalstackmedia.com",
+      logo: "https://reimbursementiq.com/og-image.png",
+      sameAs: ["https://x.com/SignalStackHQ"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://reimbursementiq.com/#website",
+      url: "https://reimbursementiq.com",
+      name: "ReimbursementIQ",
+      publisher: { "@id": "https://reimbursementiq.com/#organization" },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://reimbursementiq.com/blog?q={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@type": "Periodical",
+      name: "ReimbursementIQ Newsletter",
+      url: "https://reimbursementiq.com",
+      publisher: { "@id": "https://reimbursementiq.com/#organization" },
+      description: "Weekly intelligence on CMS policy changes, CPT/ICD updates, Medicare/Medicaid rate changes, and denial trends.",
+      isAccessibleForFree: true,
+    },
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         <main className="pt-16 min-h-screen">{children}</main>
