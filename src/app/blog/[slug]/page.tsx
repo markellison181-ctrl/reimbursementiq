@@ -54,6 +54,8 @@ The comprehensive APC for clinic visits (C-APC 5012) sees a 3.1% increase, while
 ## Bottom Line
 
 The CY2026 OPPS rule is a net positive for hospital outpatient departments. The 2.9% update, combined with newly separately payable drug administration codes, should meaningfully boost revenue for most facilities. The key is acting quickly to update systems and workflows before the January 1st effective date.
+
+Don't let prior auth issues eat into your new revenue — read our <a href="/blog/reduce-prior-auth-denials-2026" class="text-teal underline hover:text-white">5 strategies to reduce prior authorization denials</a>. And stay ahead of coding changes with our <a href="/blog/cpt-code-changes-july-2026" class="text-teal underline hover:text-white">CPT code changes guide for July 2026</a>.
     `,
   },
   'reduce-prior-auth-denials-2026': {
@@ -112,6 +114,8 @@ For the average health system, this translates to **$2.4 million in annual reven
 ## The Bottom Line
 
 Prior auth denials are a growing threat to healthcare revenue, but they're not insurmountable. Organizations that invest in proactive, technology-enabled strategies are seeing measurable improvements. Start with the highest-impact strategy for your specific denial patterns and expand from there.
+
+For related updates, see how the <a href="/blog/cms-2026-opps-rule-impact" class="text-teal underline hover:text-white">CMS 2026 OPPS rule</a> impacts your outpatient revenue, and prepare for the <a href="/blog/cpt-code-changes-july-2026" class="text-teal underline hover:text-white">new CPT codes coming in July 2026</a>.
     `,
   },
   'cpt-code-changes-july-2026': {
@@ -193,6 +197,8 @@ For a practice monitoring **100 patients** using both musculoskeletal and respir
 ## Bottom Line
 
 The new RTM codes represent a significant revenue opportunity for practices already engaged in remote patient monitoring. The key is starting your implementation planning now to be ready for the July 1st effective date. Organizations that move quickly will have a 6-month head start before the market saturates.
+
+Make sure your billing systems are also updated for the <a href="/blog/cms-2026-opps-rule-impact" class="text-teal underline hover:text-white">CMS 2026 OPPS payment changes</a>, and review our <a href="/blog/reduce-prior-auth-denials-2026" class="text-teal underline hover:text-white">prior authorization denial reduction strategies</a> to protect your revenue.
     `,
   },
 };
