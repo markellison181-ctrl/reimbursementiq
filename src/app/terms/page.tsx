@@ -46,7 +46,7 @@ export default function TermsPage() {
           </div>
           <div>
             <h2 className="text-xl font-semibold text-white mb-3">9. Contact</h2>
-            <p>For questions about these Terms, contact us at: <a href="mailto:legal@signalstackmedia.com" className="text-teal hover:underline">legal@signalstackmedia.com</a></p>
+            <p>SignalStack Media LLC<br />1209 Orange St, Wilmington, DE 19801<br />Email: <a href="mailto:legal@signalstackmedia.com" className="text-teal hover:underline">legal@signalstackmedia.com</a></p>
           </div>
         </div>
       </div>

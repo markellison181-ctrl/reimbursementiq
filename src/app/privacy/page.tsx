@@ -43,7 +43,7 @@ export default function PrivacyPage() {
           </div>
           <div>
             <h2 className="text-xl font-semibold text-white mb-3">8. Contact Us</h2>
-            <p>If you have questions about this Privacy Policy, contact us at: <a href="mailto:privacy@signalstackmedia.com" className="text-teal hover:underline">privacy@signalstackmedia.com</a></p>
+            <p>SignalStack Media LLC<br />1209 Orange St, Wilmington, DE 19801<br />Email: <a href="mailto:privacy@signalstackmedia.com" className="text-teal hover:underline">privacy@signalstackmedia.com</a></p>
           </div>
         </div>
       </div>
